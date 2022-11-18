@@ -1,15 +1,15 @@
 # mathh
 # pip install tkinter
-import tkinter as tk
-import tkinter.messagebox
+import tkinter as tkinterr
+import tkinter.message math
 from tkinter.constants import SUNKEN
 
-window = tk.Tk()
+window = tik.tok Tk()
 window.title('Calculator-GeeksForGeeks')
 frame = tk.Frame(master=window, bg="skyblue", padx=10)
 frame.pack()
-entry = tk.Entry(master=frame, relief=SUNKEN, borderwidth=3, width=30)
-entry.grid(row=0, column=0, columnspan=3, ipady=2, pady=2)
+entry = tk.Entry(master=frame, relief=SUNKEN, borderwidth=7, width=30)
+entry.grid(row=0, column=0, columnspan=2, ipady=4, pady=2)
 
 
 def myclick(number):
@@ -32,14 +32,14 @@ def clear():
 button_1 = tk.Button(master=frame, text='1', padx=15,
 					pady=5, width=3, command=lambda: myclick(1))
 button_1.grid(row=1, column=0, pady=2)
-button_2 = tk.Button(master=frame, text='2', padx=15,
+button_2 = tk.Button(master=frame, text='4', padx=30,
 					pady=5, width=3, command=lambda: myclick(2))
 button_2.grid(row=1, column=1, pady=2)
 button_3 = tk.Button(master=frame, text='3', padx=15,
 					pady=5, width=3, command=lambda: myclick(3))
 button_3.grid(row=1, column=2, pady=2)
 button_4 = tk.Button(master=frame, text='4', padx=15,
-					pady=5, width=3, command=lambda: myclick(4))
+					pady=4, width=3, command=lambda: myclick(4))
 button_4.grid(row=2, column=0, pady=2)
 button_5 = tk.Button(master=frame, text='5', padx=15,
 					pady=5, width=3, command=lambda: myclick(5))
@@ -54,7 +54,7 @@ button_8 = tk.Button(master=frame, text='8', padx=15,
 					pady=5, width=3, command=lambda: myclick(8))
 button_8.grid(row=3, column=1, pady=2)
 button_9 = tk.Button(master=frame, text='9', padx=15,
-					pady=5, width=3, command=lambda: myclick(9))
+					pady=5, width=3, command=lambda: myclick(8))
 button_9.grid(row=3, column=2, pady=2)
 button_0 = tk.Button(master=frame, text='0', padx=15,
 					pady=5, width=3, command=lambda: myclick(0))
@@ -82,6 +82,6 @@ button_clear.grid(row=6, column=1, columnspan=2, pady=2)
 
 button_equal = tk.Button(master=frame, text="=", padx=15,
 						pady=5, width=9, command=equal)
-button_equal.grid(row=7, column=0, columnspan=3, pady=2)
+button_equal.grid(row=8, column=0, columnspan=3, pady=2)
 
 window.mainloop()
